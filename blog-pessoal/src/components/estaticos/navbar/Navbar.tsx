@@ -4,7 +4,7 @@ function Navbar() {
     return (
         <>
             <AppBar position="static">
-                <Toolbar variant="dense">
+                <Toolbar variant="dense" style={{backgroundColor:"#D2691E"}}>
                     <Box style={{ cursor: "pointer" }} >
                         <Typography variant="h5" color="inherit">
                             BLOG PESSOAL
