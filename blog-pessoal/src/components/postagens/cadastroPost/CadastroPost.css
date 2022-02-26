@@ -1,3 +1,12 @@
 .topo{
     margin-top: 20px;
 }
+
+.botaoPostagem{
+    background-color:#D2691E;
+}
+
+.tituloFormsPostagem{
+    color: #363636 !important;
+    font-weight: bold !important;
+}

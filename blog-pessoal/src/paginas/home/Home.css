@@ -9,10 +9,10 @@
 
 .botao{
     border-color: #363636 !important;
-    background-color: #D2691E;
-    color: #ffffff !important;
+    color: #00CED1 !important;
+    font-weight: bold !important;
 }
 
 .postagens{
-    background-color: #ffffff;
+    background-color: #FFFAF0;
 }

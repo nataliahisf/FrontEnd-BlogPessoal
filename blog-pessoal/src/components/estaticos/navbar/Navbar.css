@@ -10,3 +10,9 @@
 .text-decorator-none{
     text-decoration: none;
 }
+
+.tituloBogPessoal{
+    font-style: oblique;
+    color: #363636;
+    font-weight: bold;
+}

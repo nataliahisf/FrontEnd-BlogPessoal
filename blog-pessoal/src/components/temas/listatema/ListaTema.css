@@ -1,3 +1,14 @@
 .text-decorator-none{
     text-decoration: none;
 }
+
+.botaoAtualizarTema {
+    background-color:#FFE4C4 !important;
+    color: ##363636 !important;
+    font-weight: bold !important;
+}
+
+.botaoDeletarTema {
+    background-color:#FF4500 !important;
+    color: #ffffff !important;
+}
