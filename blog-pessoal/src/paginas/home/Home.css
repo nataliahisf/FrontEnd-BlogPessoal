@@ -16,3 +16,7 @@
 .postagens{
     background-color: #FFFAF0;
 }
+
+.text-decorator-none{
+    text-decoration: none;
+}
