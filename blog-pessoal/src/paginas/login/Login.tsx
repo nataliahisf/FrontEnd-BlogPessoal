@@ -17,8 +17,7 @@ function Login() {
             usuario: "",
             senha: "",
             token: ""
-        }
-        )
+        })
 
     function updatedModel(e: ChangeEvent<HTMLInputElement>) {
 
@@ -30,7 +29,7 @@ function Login() {
 
     useEffect(() => {
         if (token != ''){
-            dispatch(addToken(token))
+            dispatch(addToken(token));
             history.push('/home')
         }
     }, [token])
