@@ -29,7 +29,7 @@ function Login() {
 
     useEffect(() => {
         if (token != ''){
-            dispatch(addToken(token));
+            dispatch(addToken(token)); //acrescentado ponto e virgula
             history.push('/home')
         }
     }, [token])
