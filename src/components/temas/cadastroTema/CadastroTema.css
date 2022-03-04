@@ -1,3 +1,14 @@
 .topo{
     margin-top: 20px;
 }
+
+.botaoEnviar {
+    background-color:#FFE4C4 !important;
+    color: #000000 !important;
+    font-weight: bold
+}
+
+.tituloFormsTema{
+    color: #363636 !important;
+    font-weight: bold !important;
+}

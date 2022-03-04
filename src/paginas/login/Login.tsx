@@ -52,7 +52,7 @@ function Login() {
                 progress: undefined,
             });
         } catch (error) {
-            toast.success("Dados do usuário inconsistentes. Erro ao logar.", {
+            toast.error("Dados do usuário inconsistentes. Erro ao logar.", {
                 position: "top-right",
                 autoClose: 2000,
                 hideProgressBar: false,
