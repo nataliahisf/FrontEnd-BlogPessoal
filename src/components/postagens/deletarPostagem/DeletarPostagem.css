@@ -1,0 +1,10 @@
+.botaoDeletarSim {
+    background-color:#FFE4C4 !important;
+    color: ##363636 !important;
+    font-weight: bold !important;
+}
+
+.botaoDeletarNao {
+    background-color:#FF4500 !important;
+    color: #ffffff !important;
+}

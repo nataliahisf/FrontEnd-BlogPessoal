@@ -6,6 +6,8 @@ import Postagem from '../../../models/Postagem';
 import { buscaId, deleteId } from '../../../services/Service';
 import { useSelector } from 'react-redux';
 import { TokenState } from '../../../store/tokens/tokensReducer';
+import {toast} from "react-toastify";
+
 
 function DeletarPostagem() {
     let history = useHistory();
@@ -17,7 +19,16 @@ function DeletarPostagem() {
 
     useEffect(() => {
         if (token == "") {
-            alert("Você precisa estar logado")
+          toast.error("Você precisa estar logado", {
+            position: "top-right",
+            autoClose: 2000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: false,
+            draggable: false,
+            theme: "colored",
+            progress: undefined,
+        });
             history.push("/login")
     
         }
@@ -44,7 +55,16 @@ function DeletarPostagem() {
                 'Authorization': token
               }
             });
-            alert('Postagem deletada com sucesso');
+            toast.success("Postagem deletada com sucesso", {
+              position: "top-right",
+              autoClose: 2000,
+              hideProgressBar: false,
+              closeOnClick: true,
+              pauseOnHover: false,
+              draggable: false,
+              theme: "colored",
+              progress: undefined,
+          });
           }
         
           function nao() {
@@ -55,9 +75,9 @@ function DeletarPostagem() {
       <Box m={2}>
         <Card variant="outlined" >
           <CardContent>
-            <Box justifyContent="center">
+            <Box justifyContent="center" >
               <Typography color="textSecondary" gutterBottom>
-                Deseja deletar a Postagem:
+                Deseja deletar a Postagem?
               </Typography>
               <Typography color="textSecondary" >
               {post?.titulo}
@@ -66,14 +86,14 @@ function DeletarPostagem() {
 
           </CardContent>
           <CardActions>
-            <Box display="flex" justifyContent="start" ml={1.0} mb={2} >
+            <Box display="flex" justifyContent="start" ml={1.0} mb={2}>
               <Box mx={2}>
-              <Button onClick={sim} variant="contained" className="marginLeft" size='large' color="primary">
+              <Button onClick={sim} variant="contained" size='small' className='botaoDeletarSim'>
                 Sim
               </Button>
               </Box>
               <Box>
-              <Button  onClick={nao} variant="contained" size='large' color="secondary">
+              <Button  onClick={nao} variant="contained" size='small' className='botaoDeletarNao'>
                 Não
               </Button>
               </Box>
